@@ -47,6 +47,7 @@ html, body {
     border: 1px solid #999;
     border-left: 0 none;
     color: #999;
+    cursor: pointer;
     float: right;
     margin-right: -44px;
     width: 28px;
