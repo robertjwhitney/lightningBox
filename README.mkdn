@@ -4,7 +4,9 @@ Lightning Box
 Lightning Box is light box with the goal of relying on as little js as possible.  This is acheived by:
 
 1) Limiting the feature set (what a novel idea!)
+
 2) Using some advanced CSS Tricks
+
 3) Attempting to keep the js efficient
 
 Installation
@@ -33,7 +35,9 @@ Thank You
 Based on things learned from: 
 
 [Jenna Smith](http://growldesign.co.uk/)
+
 [Eric Meyer](http://meyerweb.com/)
+
 [Ben Nadel](http://www.bennadel.com)
 
 MIT 4E
