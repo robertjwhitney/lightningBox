@@ -2,16 +2,102 @@
 <html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
   <head>
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+    <title>Lightning Box</title>
     <link href='../lightningBox/lightningBox.min.css' media='screen' rel='stylesheet' type='text/css' />
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js' type='text/javascript'></script>
     <script src='../lightningBox/lightningBox.min.js' type='text/javascript'></script>
+    <style type="text/css">
+      html{ font-family: "Georgia", "Arial", serif;}
+      #content{ width:800px; margin:0 auto;}
+      #header{ background: url('logo.png') no-repeat 0; height: 70px; margin: 1.6em 0; padding-left: 80px;}
+      h1{ font-size: 60px;}
+      h2{border-top: 1px solid #ddd; margin-top: 1.6em; padding-top: 0.8em; }
+      a{ color: #51A5E5;}
+      pre{ background: #eee; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding-top: 12px;}
+      p{line-height: 1.6em; margin: 1.6em 0;}
+      ul li{ line-height: 1.6em;}
+      #lightning-demo{ height: 80px;}
+      #lightning-demo img{ float: left; margin: 5px;}
+      #footer{ font-size: 14px; color: #ccc; padding: 50px 0; text-align: center;}
+    </style>
   </head>
   <body>
     <div id='container'>
-      <!-- all your normal page content goes in here -->
-        <a href='1.jpg' rel='lightning'><img src="1.jpg" /></a>
-        <a href='2.jpg' rel='lightning'><img src="2.jpg" /></a>
-        <a href='3.jpg' rel='lightning'><img src="3.jpg" /></a>    
+      <div id='content'>
+        <div id="header">
+          <h1>
+            Lightning Box
+          </h1>
+        </div>
+        <div id="lightning-demo">
+          <a href='1.jpg' rel='lightning'><img src="thmbs/1.jpg" /></a>
+          <a href='2.jpg' rel='lightning'><img src="thmbs/2.jpg" /></a>
+          <a href='3.jpg' rel='lightning'><img src="thmbs/3.jpg" /></a>
+          <a href='4.jpg' rel='lightning'><img src="thmbs/4.jpg" /></a>
+          <a href='5.jpg' rel='lightning'><img src="thmbs/5.jpg" /></a>
+          <a href='6.jpg' rel='lightning'><img src="thmbs/6.jpg" /></a>
+        </div>
+        <p>
+          Lightning Box is a CSS/jQuery light box with the goal of staying super light weight. It does this by:
+          <ul>
+            <li>
+              Relying on CSS techniques developed by 
+              <a href="growldesign.co.uk">
+                Jenna Smith
+              </a>
+              and
+              <a href="http://meyerweb.com/">
+                Eric Meyer
+              </a>
+            </li>
+            <li>
+              Maintaining a limited feature set
+            </li>
+            <li>
+              Trying to keep the js efficient
+            </li>
+          </ul>
+        </p>
+        <h2>
+          Get the source
+        </h2>
+        <p>
+          <a href="http://github.com/robertjwhitney/lightningBox/archives/master">
+            Download
+          </a>
+        </p>
+        <p>
+          or
+        </p>
+        <p>
+          <pre>
+            git clone git://github.com/robertjwhitney/lightningBox.git lightningBox
+          </pre>
+        </p>
+        <h2>
+          Installation
+        </h2>
+        <p>
+          Add jQuery and assets to your html doc head:
+          <script src="http://gist.github.com/296157.js?file=LightningHeader.html"></script>
+        </p>
+        <p>
+          Wrap all your content in container div:
+          <script src="http://gist.github.com/296157.js?file=LightningContainer.html"></script>
+        </p>
+        <p>
+          Add links to images using the appropriate rel tag:
+          <script src="http://gist.github.com/296157.js?file=LightningLink.html"></script>
+        </p>
+      </div>
+      <div id="footer">
+        <p>
+          Copyright 2010 Robert J Whitney, available under the 
+          <a href="http://www.opensource.org/licenses/mit-license.php">
+            MIT-License
+          </a>
+        </p>
+      </div>
     </div>
   </body>
 </html>
