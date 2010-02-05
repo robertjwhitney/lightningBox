@@ -1,0 +1,42 @@
+Lightning Box
+=====================
+
+Lightning Box is light box with the goal of relying on as little js as possible.  This is acheived by:
+
+1) Limiting the feature set (what a novel idea!)
+2) Using some advanced CSS Tricks
+3) Attempting to keep the js efficient
+
+Installation
+============
+
+Add jQuery and assets to your html doc head:
+
+    <link href='lightningBox.min.css' media='screen' rel='stylesheet' type='text/css' />
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js' type='text/javascript'></script>
+    <script src='lightningBox.min.js' type='text/javascript'></script>
+    
+Wrap all your content in a container div:
+    
+    <div id='container'>
+      <!-- all your normal page content goes in here -->
+    </div>
+    
+Add links to images using the appropriate rel tag:
+
+    <a href='myImage.jpg' rel='lightning'> My image </a>
+    
+
+Thank You
+============
+
+Based on things learned from: 
+
+[Jenna Smith](http://growldesign.co.uk/)
+[Eric Meyer](http://meyerweb.com/)
+[Ben Nadel](http://www.bennadel.com)
+
+MIT 4E
+============
+
+Freely distributed under the MIT-License
