@@ -56,6 +56,10 @@ html {
   display: table; }
   .box a {
     text-decoration: none; }
+  .box .placeholder {
+    height: 100%;
+    width: 100%;
+    background: #ccc; }
   .box .close-lightning-box {
     background: #fff;
     border: 1px solid #999;
@@ -82,9 +86,9 @@ html {
         text-decoration: underline; }
       .box #lightning-nav a:visited {
         color: #333; }
-    .box #lightning-nav .next {
+    .box #lightning-nav #next {
       float: right; }
-    .box #lightning-nav .prev {
+    .box #lightning-nav #prev {
       float: left; }
     .box #lightning-nav .lightning-nav-disabled {
       color: #ccc; }
