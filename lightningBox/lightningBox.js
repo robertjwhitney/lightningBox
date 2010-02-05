@@ -21,11 +21,9 @@ $(function(){
   });
   bolts.click( function(){
     lightning.fadeIn();
-    scrollPos = f_scrollTop();
   });  
   $(".close-lightning-box").click( function() {
     lightning.fadeOut();
-    window.scroll(0, scrollPos);
   });  
   //disable first and last links
   $("#lightning li:first-child #lightning-nav #prev").addClass("lightning-nav-disabled").attr('href', 'javascript:void(0);');
@@ -59,18 +57,4 @@ function AddSlide( imgHref, intID, alt) {
   jParent.append( jListItem.append( jbox.prepend(jclose).append(jnav) ) );
   // Return new slide.
   return( jLink );
-}
-//do some cross-browser scroll position magic
-function f_scrollTop() {
-  return f_filterResults (
-    window.pageYOffset ? window.pageYOffset : 0,
-    document.documentElement ? document.documentElement.scrollTop : 0,
-    document.body ? document.body.scrollTop : 0
-  );
-}
-function f_filterResults(n_win, n_docel, n_body) {
-  var n_result = n_win ? n_win : 0;
-  if (n_docel && (!n_result || (n_result > n_docel)))
-    n_result = n_docel;
-  return n_body && (!n_result || (n_result > n_body)) ? n_body : n_result;
 }
