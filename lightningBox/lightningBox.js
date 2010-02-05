@@ -20,11 +20,11 @@ $(function(){
     i++;
   });
   bolts.click( function(){
-    lightning.show();
+    lightning.fadeIn();
     scrollPos = f_scrollTop();
   });  
   $(".close-lightning-box").click( function() {
-    lightning.hide();
+    lightning.fadeOut();
     window.scroll(0, scrollPos);
   });  
   //disable first and last links
@@ -33,7 +33,7 @@ $(function(){
   //add some animation
   $("#lightning-nav a").click( function(){
     lightning.animate({
-        opacity: 0.5,
+        opacity: 0.9,
       }, 80, function() {
         $(this).animate({
             opacity: 1,
