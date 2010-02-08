@@ -6,7 +6,6 @@ $(function(){
   var lightning = $("#lightning");
   var bolt = [];
   var jLink = [];
-  var scrollPos = "";
   bolts.each( function() {
     bolt.push(this)
   });
